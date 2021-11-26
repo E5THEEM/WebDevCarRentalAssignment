@@ -1,0 +1,796 @@
+/* Description: Assignment 1 stylesheet */
+/* Author: Irvin, Jonanthan, Benjamin, Eric  */
+/* Date: 23 September 2019  */
+/* Validated: */
+
+body {
+    margin: 0 ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nav Bar */ /*Jonathan written, Irvin simplify*/
+nav{
+	position: sticky;
+  	top: 0;
+  	z-index: 9999;
+}
+
+.nav {
+  	background-color: white;
+	letter-spacing: 4px;
+	text-align: center;
+  	margin:0;
+	height: 150px;
+}
+
+.nav li {
+	display:inline-block;
+    margin:0 auto;
+    padding:0;
+    max-height: 550px;
+	max-width: 400px;
+}
+
+.nav li a 
+{
+  	margin-top: 35px;
+	display:inline-block;
+	padding:12px;
+	font-size:13px;
+	text-transform:uppercase;
+	text-decoration:none;
+	color: black;
+	background-color: white;
+}
+
+.nav li a:hover {
+	background-color:black;
+	color:white;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav li a {
+	font-size: 10px;
+	padding: 8px;
+	margin-top: 26px;
+  }
+  .nav li {
+	  max-height: 80px;
+	  max-width: 330px;
+  }
+  .nav {
+	  letter-spacing: 2px;
+	  height: 200px;
+  }
+}
+nav img{
+	width: 50%;
+	max-width: 200px;
+	float:left;
+  }
+/* End of Nav Bar */
+
+/* car image banner @ index.html*/
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+}
+/* car image banner index*/
+
+/* Short about the team */
+section h1,section p{
+    text-align: initial;
+    font-size: 30px;
+  }
+  
+section{
+    display: flex;
+    height: 70vh;
+  }
+  
+  .logo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 10px;
+  }
+  
+  .logo iframe{
+	  width: 80%;
+	  max-width: 550px;
+  }
+  
+  .preview{
+    width: 75%;
+	position: relative;
+	border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 320px) {
+	.preview p {
+	  font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+	  text-align: left;
+	  width: 85%;
+  }
+}
+
+  #button{
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    float: right;
+    text-decoration: none;
+	font-size: 16px;
+	border-radius: 25px;
+    
+  }
+
+  #button:hover {
+  	background-color: purple;
+  	cursor: pointer;
+  }
+
+/* Short about the team */
+
+
+/* Car rental */
+  .cars img{
+    margin-top: 40px;
+    margin-left: 15px;
+    max-height: 550px;
+    max-width: 400px;
+    width: 20%;
+    height: 10%;
+    position: relative;
+    border: 2px solid grey;
+	border-radius: 50%;
+}
+  
+  .cars{
+	text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+/* Car rental */
+
+
+/* Footer */
+footer{
+	background-color: black;
+	margin: 0;
+	padding: 10px;	
+	margin-top: 20px;
+	clear: both;
+	}
+	
+	.footerbig{
+	display: flex;
+	padding: 4vh 5vw;
+	justify-content: space-between;
+	}
+
+	.footer_list{
+	flex: 1;
+	width: 50%;
+	max-width: 20vw;
+	}
+
+	.footerh1{
+	border-bottom: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+	}
+
+	.footerh1 h1{
+	color: #fff;
+    margin: 1em 0;
+    font-size: 20px;
+    line-height: 1.4em;
+    letter-spacing: 2px;
+	text-transform: uppercase;
+	}
+
+	.footer{
+	column-count:1;
+	padding: 0;
+    list-style: none;
+    margin-left: 0;
+    line-height: 1rem;
+	}
+
+	.list ul{
+	display: inline-block;
+	}
+
+	.list ul li{
+		padding-bottom: 2px;
+		font-size: 14px;
+	}
+	
+	.list ul li a{
+	color: #fff;
+	text-decoration: none;
+	}
+
+	.list ul li a:hover{
+		color: purple;
+		font-weight: bold;
+	}
+	
+	.copy{
+	text-align: center;
+	color: white;
+	padding: 10px;
+	}
+	
+	.social_media_footer, .copy a{
+	color: #f1f1f1;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	}
+	
+	#social_media_footer img{
+	width:50px;
+	height:50px;
+	}
+
+footer p{
+  color: #fff;
+  font-size:15px;
+  text-align: center;
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer ul a{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer ul li{
+  color: white;	
+}
+
+.footerh1 h1{
+  color: #fff;
+  font-size: 20px;
+  text-align: left;
+  margin: 2px;
+}
+/* Footer */
+
+/*Disclaimer in disclaimer.html*/
+ .disclaim{
+	 width: 80%;
+	 margin: 0 auto;
+	 padding-bottom: 120px;
+ }
+
+  .disclaim ul li {
+	width: 80%;
+	margin: 0 auto;
+	padding: 5px;
+	font-size: 1.2em;
+  }
+
+  /*theteam.html page - page to redirect to individual members*/
+  .teammain{
+	  width: 90%;
+	  margin: 0 auto;
+  }
+
+  .teamind{
+	float: left;
+	width: 25%;
+	text-align: center;
+  }
+
+  .teamind img{
+	  max-width: 18vw;
+	  margin: 0 auto;
+	  border: 3px solid black;
+
+  }
+
+	/*Enquiry--*/ /* Eric Written */
+.formbody{
+	font-family:TW CEN MT, Arial, sans-serif;
+}
+select{
+	width:90%;
+	padding:7px 20px;
+	border:none;
+	border-radius:25px;
+	background-color:#f1f1f1;
+	font-family:TW Cen MT;
+	font-size:16px;
+}
+input[type=text]{
+	width:50%;
+	border:none;
+	padding:7px 20px;
+	background-color:#f1f1f1;
+	border-radius:25px;
+	-webkit-transition: width 0.2s ease-in-out;
+	transition: width 0.2s ease-in-out;
+	font-family:TW Cen MT;
+	font-size:16px;
+}
+input[type=text]:focus{
+	width:83%
+}
+input[type=email]{
+	width:50%;
+	border:none;
+	padding:7px 20px;
+	background-color:#f1f1f1;
+	border-radius:25px;
+	-webkit-transition: width 0.2s ease-in-out;
+	transition: width 0.2s ease-in-out;
+	font-family:TW Cen MT;
+	font-size:16px;
+}
+input[type=email]:focus{
+	width:83%
+}
+input[type=date]{
+	width:50%;
+	border:none;
+	padding:7px 20px;
+	background-color:#f1f1f1;
+	border-radius:25px;
+	font-family:TW Cen MT;
+	font-size:16px;
+}
+input[type=reset]{
+	font-family:TW Cen MT;
+	background-color:#D5DBDB;
+	border-radius:25px;
+	border:none;
+	padding:7px 20px;
+	transition:all 0.3s ease;
+	font-size:16px;
+}
+input[type=reset]:hover{
+	box-shadow:2px 0px #7F8C8D;
+	-webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+input[type=tel]{
+	width:50%;
+	border:none;
+	padding:7px 20px;
+	background-color:#f1f1f1;
+	border-radius:25px;
+	-webkit-transition: width 0.2s ease-in-out;
+	transition: width 0.2s ease-in-out;
+	font-family:TW Cen MT;
+	font-size:16px;
+}
+input[type=tel]:focus{
+	width:83%
+}
+
+fieldset{
+	border-radius:20px;
+	border:0.5px solid #7F8C8D;
+}
+legend{
+	text-align:right;
+	background-color:#f1f1f1;
+	border-radius:25px;
+	padding:5px 17px;
+}
+form{
+	width:100%;
+	background-color:white;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:50px;
+	padding-bottom:50px;
+	opacity:0.95;
+}
+.formpos{
+	margin:auto;
+	width:70%;
+	padding:10px;
+}
+.formbody{
+	background-image:url("formbckg.jpg");
+	background-attachment:fixed;
+}
+.formlogo{
+	width:100px;
+	float:right;
+}
+.formtop{
+	padding-bottom:20px;
+	font-size:20px;
+}
+input[type=submit]{
+	font-family:TW Cen Mt;
+	background-color:#D5DBDB;
+	border-radius:25px;
+	border:none;
+	padding:7px 20px;
+	transition:all 0.3s ease;
+	font-size:16px;
+}
+input[type=submit]:hover{
+	box-shadow:2px 0px #7F8C8D;
+	-webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+.formbuttons{
+	text-align:center;
+}
+input[type=number]{
+	width:50%;
+	border:none;
+	padding:7px 20px;
+	background-color:#f1f1f1;
+	border-radius:25px;
+	-webkit-transition: width 0.2s ease-in-out;
+	transition: width 0.2s ease-in-out;
+	font-family:TW Cen MT;
+	font-size:16px;
+}
+input[type=number]:focus{
+	width:83%
+}
+.textareabox{
+	border:none;
+	background-color:#f1f1f1;
+	border-radius:10px;
+	font-family:TW Cen MT;
+	font-size:13px;
+}
+@keyframes click-wave{
+	0%{
+		height:10px;
+		width:10px;
+		opacity:0.35;
+		position:relative;
+	}
+	100%{
+		height:200px;
+		width:200px;
+		margin-left:-80px;
+		margin-top:-80px;
+		opacity:0;
+	}
+}
+.radioinput{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	position: relative;
+	top:5px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	transition: all 0.15s ease-out 0s;
+	background: #cbd1d8;
+	border: none;
+	color: #f1f1f1;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 0.5rem;
+	outline: none;
+	position: relative;
+	z-index: 1000;
+}
+.radioinput:hover {
+  background: #9faab7;
+}
+.radioinput:checked {
+  background: #696969;
+}
+.radioinput:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+}
+.radioinput:checked::after {
+  -webkit-animation: click-wave 0.45s;
+  -moz-animation: click-wave 0.45s;
+  animation: click-wave 0.45s;
+  background: #A9A9A9;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.radioinput {
+  border-radius: 50%;
+}
+.radioinput::after {
+  border-radius: 50%;
+}
+.checkboxinput{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	position: relative;
+	top:7px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	transition: all 0.15s ease-out 0s;
+	background: #cbd1d8;
+	border: none;
+	color: #f1f1f1;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 0.5rem;
+	outline: none;
+	position: relative;
+	z-index: 1000;
+}
+.checkboxinput:hover {
+  background: #9faab7;
+}
+.checkboxinput:checked {
+  background: #696969;
+}
+.checkboxinput:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+}
+.checkboxinput:checked::after {
+  -webkit-animation: click-wave 0.45s;
+  -moz-animation: click-wave 0.45s;
+  animation: click-wave 0.45s;
+  background: #A9A9A9;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.tcagreement{
+	font-size:14px;
+}
+/*--Enquiry END--*/
+
+/* aboutme.html codes */
+.studname{
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%;
+}
+.studnum{
+	font-family: Arial, sans-serif;
+}
+.studcourse{
+	color: #8D1B91;
+	font-weight: bold;
+}
+
+.profile, .profile table, aside{
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+
+.profile table, .profile table tr, .profile table th {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.profile table caption{
+	font-weight: bold;
+}
+
+.aboutmepic{
+	text-align: center;
+}
+
+.aboutmepic img{
+	max-width: 25vw;
+	border-style: groove;
+	border-width: 5px;
+	padding: 20px;
+
+}
+/*end of aboutme.html*/
+
+/* Product1,2,3,4 */
+.carmodel{
+	text-align: center;
+}
+
+.cartable{
+	margin-bottom: 100px;
+	margin: 0 auto;
+	width: 80%;
+	table-layout: fixed;
+	}
+
+.cartable caption{
+	font-size: 1.25em;
+	font-weight: bold;
+	clear: both;
+	padding-top: 40px;
+}
+
+.carset{
+	margin: 0 auto;
+	width: 90%;
+}
+
+.carpic{
+	width:24.5%;
+	max-height: 300px;
+	height: 25vh;
+	float:left;
+	margin: 0 auto;
+	padding: 1px;
+	}
+
+.cartable, .cartable tr, .cartabletd, .cartableth {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.cartableth{
+	padding:15px;
+}
+/*Product 3*/
+.Car1{
+	font-family:TW Cen Mt;
+	background-color:lightgrey;
+	border-radius:25px;
+	border:none;
+	padding:10px 20px;
+	transition:all 0.3s ease;
+	font-size:17px;
+	padding-bottom:55px;
+	background-attachment: fixed;
+
+}
+.CarShow{
+	max-width:25%;
+	border-radius:50%;
+	float:left;
+	padding-right:10px;
+	padding-left:10px;
+}
+.cartitle{
+	font-size:1.7em;
+}
+.Car2{
+	font-family:TW Cen Mt;
+	background-color:lightgrey;
+	border-radius:25px;
+	border:none;
+	padding:10px 20px;
+	transition:all 0.3s ease;
+	font-size:17px;
+	padding-bottom:25px;
+}
+.CarShow2{
+	max-width:25%;
+	border-radius:50%;
+	float:right;
+	padding-left:10px;
+	padding-right:10px;
+}
+.Car3{
+	font-family:TW Cen Mt;
+	background-color:lightgrey;
+	border-radius:25px;
+	border:none;
+	padding:10px 20px;
+	transition:all 0.3s ease;
+	font-size:17px;
+	padding-bottom:55px;
+}
+.CarShow3{
+	max-width:25%;
+	border-radius:50%;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+}
+.Car4{
+	font-family:TW Cen Mt;
+	background-color:lightgrey;
+	border-radius:25px;
+	border:none;
+	padding:10px 20px;
+	transition:all 0.3s ease;
+	font-size:17px;
+	padding-bottom:55px;
+}
+.CarShow4{
+	max-width:25%;
+	border-radius:50%;
+	float:right;
+	padding-left:10px;
+	padding-right:10px;
+}
+.Car5{
+	font-family:TW Cen Mt;
+	background-color:lightgrey;
+	border-radius:25px;
+	border:none;
+	padding:10px 20px;
+	transition:all 0.3s ease;
+	font-size:17px;
+	padding-bottom:15px;
+}
+.CarShow5{
+	max-width:26%;
+	border-radius:50%;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.button1{
+    background-color: black; 
+    border: none;
+    color: white;
+	padding: 15px 40px;
+	float: right;
+    text-decoration: none;
+	font-size:18px;
+	border-radius: 25px;
+  }
+
+  .button1:hover,  .button2:hover {
+  	background-color: purple;
+  	cursor: pointer;
+  }
+
+  .button2{
+    background-color: black; 
+    border: none;
+    color: white;
+	padding: 15px 40px;
+    margin: 0 auto;
+    text-decoration: none;
+	font-size: 18px;
+	border-radius: 25px;
+  }
+
+/*End Product 3*/
+/* end of Product 1,2,3,4 */

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<!-- Start of HTML -->
+<html lang="en">
+	<!-- Description: Assignment 1 -->
+	<!-- Author: Irvin, Jonathan, Eric, Benjamin -->
+	<!-- Date: 23th September 2019 -->
+	<!-- Date Validated OK:  -->
+
+<!-- Start of Head -->
+<head>
+ <title> CarKraft - Enquiry </title>
+ <meta charset="utf-8"/>
+ <meta name="description" content="CarKraft"/>
+ <meta name="author" content="Irvin, Jonathan, Eric, Benjamin"/>
+ <meta name="keywords" content="car, rental, advance"/>
+ <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+ <link rel="icon" href="images/logo.png"/>
+
+</head>
+<!-- End of Head -->
+
+<!-- Start of Body -->
+<body id="body">
+
+		<!-- Header -->
+		<header> 
+		</header>
+		<!-- End Header -->
+		
+		<!-- Nav -->
+		<nav>
+				<a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+				<ul class="nav">
+					<li> <a href="product1.html"> Luxury Cars </a> </li>
+					<li> <a href="product2.html"> Off-Terrain </a> </li>
+					<li> <a href="product3.html"> 4-Seater </a> </li>
+					<li> <a href="product4.html"> SUV </a> </li>
+					<li><a href="enquiry.html">RentalForm</a></li>
+					<li><a href="theteam.html">Team</a></li>
+					<li><a href="Disclaimer.html">Disclaimer</a></li>
+				</ul>
+		</nav>
+		<!-- End Nav -->
+		
+
+<!-- Article -->
+<article>
+<div class="formbody">
+<div class=formpos>
+	<form action="mailto:">
+		<div class="formtop">
+		<img src="images/logoblack.png" alt="logo" class="formlogo">
+		<h1>INFORMATION</h1>
+		<p>Enquiry</p>
+		</div>
+		<fieldset>
+		<legend>Driver Details</legend>
+		<select name="title">
+		<optgroup label="Please select">
+		<option value="Mr">Mr</option>
+		<option value="Mrs">Mrs</option>
+		<option value="Miss">Miss</option>
+		<option value="Dr">Dr</option>
+		<option value="Ms">Ms</option>
+		</optgroup>
+		</select>
+		<p><input type="text" name="firstname" required="required" placeholder="First Name" maxlength="25" pattern="[A-Za-z]+" title="Please enter on alphabets only"></p>
+		<p><input type="text" name="surname" required="required" placeholder="Surname" maxlength="25" pattern="[a-zA-Z]+" title="Please enter on alphabets only"></p>
+		<p><input type="email" name="email" required="required" placeholder="Email">
+		<p><input type="text" name="phonenumber" required="required" placeholder="Phone Number" pattern="[0-9]+" title="Please enter on numbers only">
+		</fieldset>
+		
+		<fieldset>
+		<legend>Address</legend>
+		<p><input type="text" name="streetaddress" required="required" maxlength="40" placeholder="Street Name">
+		<p><input type="text" name="city/town" required="required" maxlength="20" placeholder="City/Town"></p>
+		<p><select name="state">
+		<optgroup label="State/Federal Territory">
+		<option>Kuala Lumpur</option>
+		<option>Putrajaya</option>
+		<option>Labuan</option>
+		<option>Selangor</option>
+		<option>Johor</option>
+		<option>Sabah</option>
+		<option>Sarawak</option>
+		<option>Perak</option>
+		<option>Kedah</option>
+		<option>Kelantan</option>
+		<option>Penang</option>
+		<option>Pahang</option>
+		<option>Terrengganu</option>
+		<option>Negeri Sembilan</option>
+		<option>Melacca</option>
+		<option>Perlis</option>
+		</optgroup>
+		</select></p>
+		<p><input type="tel" placeholder="Postcode" pattern="[0-9]+" maxlength="5"></p>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Booking Details</legend>
+		<p><input type="number" placeholder="Rental Duration (Days)" max="365" required="required">
+		<p>From <br><input type="date" name="startdate" min="2019-10-01" max="2020-10-01" required="required" title="Pick-up Date"></p>
+		<p>To <br><input type="date" name="enddate" min="2019-10-01" max="2020-10-01" required="required" title="Drop-off Date"></p>
+		<div>
+		<p>Purpose Rental: <br>
+		<label><input type="radio" class="radioinput" name="purpose" value="business" checked="checked">Business</label>
+		<label><input type="radio" class="radioinput" name="purpose" value="leisure">Leisure</label></p>
+		</div>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Car Details</legend>
+		<p>Car Type<br><select name="cartype">
+		<optgroup label="Please Select">
+		<option>Ferrari 458 Italia</option>
+		<option>Ford Mustang GT</option>
+		<option>Mercedes-Benz SLK350 AMG</option>
+		<option>Lamborghini Aventador Coupè</option>
+		<option>Maserati Quattroporte</option>
+		<option>Audi R8 coupe</option>
+		</optgroup>
+		</select></p>
+		<p>Colour:<br><select name="colour">
+		<option>Championship White</option>
+		<option>Rosso Corsa</option>
+		<option>Onyx Black</option>
+		<option>Liquid Yellow</option>
+		<option>Nardo Grey</option>
+		<option>Sub-Lime</option>
+		</select></p>
+		<p>Add-On:<br><textarea class="textareabox" rows="10" cols="52" placeholder="Any Additional Information?"></textarea>
+		</fieldset>
+		
+		<div class="tcagreement">
+		<p><input type="checkbox" required="required" class="checkboxinput">I've read and agree to the Terms & Conditions</p>
+		</div>
+		
+		<div class="formbuttons">
+		<p><input type="submit" value="Submit"><input type="reset" value="CLEAR"></p>
+		</div>
+	</form>
+</div>
+</div>
+</article>
+<!-- Footer -->
+<footer>
+		<div class="footerbig">
+			<div class="footer_list">
+				<div class="footerh1">
+					<h1>CarKraft</h1>
+				</div>
+				<div class="list">
+					<ul class="footer">
+						<li class="footer_content"><a href="index.html">Home</a></li>
+						<li class="footer_content"><a href="theteam.html">Team</a></li>
+						<li class="footer_content"><a href="enquiry.html">Rental Form</a></li>
+						<li class="footer_content"><a href="disclaimer.html">Disclaimer</a></li>
+						<li class="footer_content"><a href="enhancements.html">Enhancements</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_list">
+				<div class="footerh1">
+					<h1>Car List</h1>
+				</div>
+				<div class="list">
+					<ul class="footer">
+						<li class="footer_content"><a href="product1.html">Luxury</a></li>
+						<li class="footer_content"><a href="product2.html">Off-Terrain</a></li>
+						<li class="footer_content"><a href="product3.html">4-Seater</a></li>
+						<li class="footer_content"><a href="product4.html">SUV</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="social_media_footer">
+				<p class="copy">&copy; 2019 <a href="theteam.html">Team</a> | Last update:</p>
+			</div>
+		</div>
+		</footer>
+<!-- End Footer -->
+<!-- End of Body -->	
+</body>
+<!-- End of HTML -->
+</html>
